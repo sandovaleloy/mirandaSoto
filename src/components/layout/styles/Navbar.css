@@ -1,0 +1,266 @@
+.container_navbar {
+  height: 35px;
+  width: 100%;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  background-color: red;
+  /* background-size: cover;
+  object-fit: cover; */
+}
+
+/* .image_logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 51px;
+  margin: 0 auto;
+  overflow: hidden;
+} */
+
+/* .image_logo img {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+} */
+
+.navbar_link {
+  justify-content: start;
+  font-size: 20px;
+  position: fixed;
+  right: -1px;
+  top: 35px;
+  display: grid;
+  background-color: red;
+  transform: translateX(100vw);
+  transition: all ease 0.5s;
+  height: 100%;
+  width: 35%;
+  z-index: 4;
+  list-style: none;
+}
+
+.li_1 {
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+.li_2 {
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.li_3 {
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+.li_4 {
+  padding: 10px;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+.li_5 {
+  padding: 10px;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+.link_a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  transition: background 300ms ease, color 300ms ease;
+}
+
+.link_a:hover {
+  color: #fff;
+}
+
+.menu {
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  top: 10px;
+  transition: background 300ms ease, color 300ms ease;
+  right: 10px;
+  z-index: 1;
+}
+
+.menu:hover {
+  color: #fff;
+}
+
+.active {
+  transform: translateY(0px);
+  transition: all ease 0.3s;
+}
+
+/* .title_app {
+  text-transform: uppercase;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 39px;
+  top: 200px;
+  right: 0px;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+} */
+
+/* .nabvar_redes-container {
+  padding: 0.5rem 0;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  position: fixed;
+  z-index: 4;
+} */
+
+/* .navbar_redes {
+  margin-right: 100px;
+}
+
+.navbar_redes i {
+  color: white;
+  margin: 3px;
+  font-size: 25px;
+} */
+
+/* .navbar_redes-h5 {
+  color: gray;
+  text-align: center;
+} */
+
+/* .thin {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.thicker {
+  font-weight: 900; 
+} */
+/* @media (width: 878px) {
+  .menu {
+    display: none;
+  }
+} */
+
+@media (max-width: 878px) {
+  .title_app {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 780px) {
+  .title_app {
+    font-size: 27px;
+    top: 210px;
+  }
+}
+
+@media (max-width: 725px) {
+  .title_app {
+    top: 195px;
+  }
+}
+
+@media (max-width: 670px) {
+  .menu {
+    display: flex;
+    position: fixed;
+  }
+
+  .navbar_link {
+    display: grid;
+    top: 35px;
+    /* background-color: var(--primary-color); */
+    transform: translateX(640px);
+  }
+
+  .active {
+    transform: translateY(00px);
+    transition: all ease 0.3s;
+  }
+
+  .title_app {
+    top: 130px;
+    font-size: 27px;
+    display: grid;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .title_app {
+    top: 90px;
+  }
+}
+
+@media (max-width: 355px) {
+  .title_app {
+    font-size: 20px;
+    height: auto;
+    top: 70px;
+  }
+
+  .li_1,
+  .li_2,
+  .li_3,
+  .li_4,
+  .li_5 {
+    left: 0;
+  }
+}
+
+.menu {
+  display: block;
+  cursor: pointer;
+  top: 4px;
+  right: 40px;
+  z-index: 5;
+}
+
+.barra {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .barra {
+    display: flex;
+  }
+}
+
+.activo .barra:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.activo .barra:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-25px);
+}
+
+.activo .barra:nth-child(3) {
+  transform: rotate(45deg) translate(-7px, -7px);
+}

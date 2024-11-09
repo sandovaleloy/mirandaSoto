@@ -1,9 +1,13 @@
 import "./App.css";
+import mr from "../public/mr.jpeg";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
   return (
     <div>
-      <h3> Aqui se creara la pagina de la empresa MIRANDA SOTO </h3>
+      <div>
+        <Navbar />
+      </div>
     </div>
   );
 }
