@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles/Navbar.css";
+import icon from "../../../public/ms.jpeg";
 
 const Navbar = () => {
   const [btnMenu, setBtnMenu] = useState(false);
@@ -16,15 +17,47 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="conatiner_nav">
       <div className="container_navbar">
+        {/* <div className="container_logo">
+          <img src={icon} alt="" />
+        </div> */}
+
         <div className={`menu ${btnMenu ? "activo" : ""}`} onClick={toggleMenu}>
           <div className="barra"></div>
           <div className="barra"></div>
           <div className="barra"></div>
         </div>
 
-        <ul className={`navbar_link ${btnMenu ? "active" : ""}`}>
+        <ul className="navbar_link1">
+          <li className="">
+            <a className="link_a" onClick={toggleMenu} href="#TurismoSections">
+              Inicio
+            </a>
+          </li>
+          <li className="">
+            <a onClick={toggleMenu} href="#TurismoSections" className="link_a">
+              Busca
+            </a>
+          </li>
+          <li className="">
+            <a onClick={toggleMenu} href="#Turismo2Section" className="link_a">
+              Destinos
+            </a>
+          </li>
+          <li className="">
+            <a onClick={toggleMenu} href="#SectionMaps" className="link_a">
+              Mapa
+            </a>
+          </li>
+          <li className="">
+            <a onClick={toggleMenu} href="#Footer" className="link_a">
+              Información
+            </a>
+          </li>
+        </ul>
+
+        <ul className={`navbar_link2 ${btnMenu ? "active" : ""}`}>
           <li className="li_1">
             <a className="link_a" onClick={toggleMenu} href="#TurismoSections">
               Inicio

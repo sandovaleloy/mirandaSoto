@@ -1,0 +1,47 @@
+.carousel-container {
+  width: 100vw; /* Ocupa el ancho completo de la pantalla */
+  max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+  margin: 0 auto;
+  overflow: hidden; /* Oculta cualquier contenido desbordado */
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  overflow: hidden; /* Evita que el carrusel desborde el contenedor */
+}
+
+.slick-slide img {
+  width: 100%; /* La imagen ocupa el ancho completo de la diapositiva */
+  height: auto; /* La altura se ajusta manteniendo la proporción */
+  max-height: 70vh; /* Ajusta la altura máxima en pantallas grandes */
+  object-fit: cover; /* Cubre el área de la diapositiva sin distorsionar */
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+.slick-track {
+  padding-top: 55px;
+}
+
+.slick-dots {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .slick-slide img {
+    max-height: 50vh; /* Ajusta la altura en pantallas medianas */
+  }
+  .slick-dots {
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slide img {
+    max-height: 40vh; /* Ajusta la altura en pantallas pequeñas */
+  }
+}

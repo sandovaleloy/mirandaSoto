@@ -1,0 +1,27 @@
+.container_aboutMe {
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+
+.aboutMe {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.aboutMe_title {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.aboutMe_parrafo {
+  padding-left: 10px;
+  text-align: start;
+}
