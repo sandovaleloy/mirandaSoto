@@ -3,12 +3,15 @@
   max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
   margin: 0 auto;
   overflow: hidden; /* Oculta cualquier contenido desbordado */
+  padding-top: 1000px;
+  margin-top: 1000px;
 }
 
 .slick-slide {
   display: flex !important;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .slick-list {

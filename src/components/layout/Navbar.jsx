@@ -31,25 +31,25 @@ const Navbar = () => {
 
         <ul className="navbar_link1">
           <li className="">
-            <a className="link_a" onClick={toggleMenu} href="#TurismoSections">
+            <a className="link_a" onClick={toggleMenu} href="#Carrousel">
               Inicio
             </a>
           </li>
           <li className="">
-            <a onClick={toggleMenu} href="#TurismoSections" className="link_a">
-              Busca
+            <a onClick={toggleMenu} href="#Aboutme" className="link_a">
+              sobre nosotros
             </a>
           </li>
           <li className="">
-            <a onClick={toggleMenu} href="#Turismo2Section" className="link_a">
-              Destinos
+            <a onClick={toggleMenu} href="#Frame" className="link_a">
+              Redes sociales
             </a>
           </li>
-          <li className="">
+          {/* <li className="">
             <a onClick={toggleMenu} href="#SectionMaps" className="link_a">
               Mapa
             </a>
-          </li>
+          </li> */}
           <li className="">
             <a onClick={toggleMenu} href="#Footer" className="link_a">
               Información
@@ -59,25 +59,25 @@ const Navbar = () => {
 
         <ul className={`navbar_link2 ${btnMenu ? "active" : ""}`}>
           <li className="li_1">
-            <a className="link_a" onClick={toggleMenu} href="#TurismoSections">
+            <a className="link_a" onClick={toggleMenu} href="#Carrousel">
               Inicio
             </a>
           </li>
           <li className="li_2">
-            <a onClick={toggleMenu} href="#TurismoSections" className="link_a">
-              Busca
+            <a onClick={toggleMenu} href="#Aboutme" className="link_a">
+              sobre nosotros
             </a>
           </li>
           <li className="li_3">
-            <a onClick={toggleMenu} href="#Turismo2Section" className="link_a">
-              Destinos
+            <a onClick={toggleMenu} href="#Frame" className="link_a">
+              redes sociales
             </a>
           </li>
-          <li className="li_4">
+          {/* <li className="li_4">
             <a onClick={toggleMenu} href="#SectionMaps" className="link_a">
               Mapa
             </a>
-          </li>
+          </li> */}
           <li className="li_5">
             <a onClick={toggleMenu} href="#Footer" className="link_a">
               Información

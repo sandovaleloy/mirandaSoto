@@ -88,6 +88,7 @@
 @media (max-width: 661px) {
   .field_item {
     text-align: center;
+    padding: 0;
   }
   .list_variant-2 {
     justify-content: center;

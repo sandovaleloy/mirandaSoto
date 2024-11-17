@@ -22,7 +22,7 @@ const MyCarrousel = () => {
   };
 
   return (
-    <div className="carrousel_container">
+    <div className="carrousel_container" id="Carrousel">
       <Slider {...settings}>
         <div className="slick-slide">
           <img src={imgcarr} alt="Imagen 1" />

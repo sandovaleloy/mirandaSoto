@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #e5e5e5;
+  margin-top: 100px;
 }
 
 .aboutMe {
@@ -11,7 +12,8 @@
   justify-content: center;
   text-align: center;
   text-align: center;
-  padding: 10px;
+  padding: 100px 0;
+  max-width: 500px;
 }
 
 .aboutMe_title {
@@ -19,9 +21,30 @@
   align-items: center;
   text-align: end;
   padding-right: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  line-height: 31.55px;
+  font-size: clamp(18px, 4vw, 21.03px) !important;
+  color: rgb(71, 60, 60);
 }
 
 .aboutMe_parrafo {
   padding-left: 10px;
   text-align: start;
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .aboutMe {
+    display: block;
+  }
+
+  .aboutMe_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMe_parrafo {
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }

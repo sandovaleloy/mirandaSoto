@@ -3,7 +3,7 @@ import "./styles/AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="container_aboutMe">
+    <div className="container_aboutMe" id="Aboutme">
       <div className="aboutMe">
         <h3 className="aboutMe_title">sobre MIRANDA SOTO</h3>
         <p className="aboutMe_parrafo">
