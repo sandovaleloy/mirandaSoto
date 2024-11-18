@@ -10,7 +10,7 @@ import imgcarr4 from "../../assets/aseo3.5.svg";
 
 const MyCarrousel = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

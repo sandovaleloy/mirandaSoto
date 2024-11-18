@@ -1,50 +1,76 @@
 .container_aboutMe {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
   background-color: #e5e5e5;
   margin-top: 100px;
+  max-width: 100%;
+  min-height: 300px;
+  position: relative;
 }
 
 .aboutMe {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
   text-align: center;
-  text-align: center;
-  padding: 100px 0;
-  max-width: 500px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.aboutMe.fading {
+  opacity: 0;
 }
 
 .aboutMe_title {
-  display: flex;
-  align-items: center;
-  text-align: end;
-  padding-right: 10px;
+  margin-bottom: 15px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-  line-height: 31.55px;
-  font-size: clamp(18px, 4vw, 21.03px) !important;
+  font-size: clamp(18px, 4vw, 21.03px);
   color: rgb(71, 60, 60);
+  padding-top: 30px;
 }
 
 .aboutMe_parrafo {
-  padding-left: 10px;
-  text-align: start;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 1.6;
   width: 90%;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.aboutMe_buttons {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+}
+
+.aboutMe_buttons button {
+  background-color: #4a0675;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.aboutMe_buttons button:hover {
+  background-color: #2f054b;
 }
 
 @media (max-width: 600px) {
-  .aboutMe {
-    display: block;
+  .container_aboutMe {
+    min-height: 450px;
   }
 
-  .aboutMe_title {
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe_parrafo {
-    padding-left: 0;
-    margin: 0 auto;
+  .aboutMe_buttons {
+    gap: 10px;
+    bottom: 20px;
   }
 }

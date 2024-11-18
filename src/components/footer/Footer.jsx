@@ -11,39 +11,24 @@ const Footer = () => {
               <h3 className="title_variant-1">lineas de atenciom</h3>
               <ul className="list_variant-1">
                 <li className="list_variant-li">
-                  Calle 28 No 13A - 15 Piso 35-36
+                  Calle ** No *A - ** Piso **-**
+                  {/* Calle 28 No 13A - 15 Piso 35-36 */}
                   <br />
-                  Bogotá - Colombia
+                  Becerril - Colombia
                 </li>
                 <li className="list_variant-li">
-                  <a href="">3023352133</a>
+                  celular
+                  <a href="">**********</a>
                 </li>
                 <li className="list_variant-li">
                   fax
-                  <a href="">3023352133</a>
+                  <a href="">**********</a>
                 </li>
                 <li>Lun - Vi 8:30 A.M. - 5:30 P.M</li>
               </ul>
               <p>&nbsp;</p>
-              <ul className="list_variant-2">
-                <li>
-                  <i className="bx bxl-facebook"></i>
-                </li>
-                <li>
-                  <i className="bx bxl-instagram"></i>
-                </li>
-                <li>
-                  <i className="bx bxl-whatsapp"></i>
-                </li>
-                <li>
-                  <i className="bx bxl-youtube"></i>
-                </li>
-                <li>
-                  <i className="bx bxl-telegram"></i>
-                </li>
-              </ul>
             </section>
-            <section className="field_item">
+            {/* <section className="field_item">
               <h3 className="title_variant-1">nuestros clientes</h3>
               <ul className="list_variant-1">
                 <li className="list_variant-li">
@@ -62,24 +47,41 @@ const Footer = () => {
                   <a href="">marca pais</a>
                 </li>
               </ul>
-            </section>
+            </section> */}
             <section className="field_item">
               <h3 className="title_variant-1">enlaces de interes</h3>
               <ul className="list_variant-1">
                 <li className="list_variant-li">
                   <a href="">servicio al ciudadano</a>
                 </li>
-                <li className="list_variant-li">
+                {/* <li className="list_variant-li">
                   <a href="">informe de sostenibilidad</a>
-                </li>
-                <li className="list_variant-li">
+                </li> */}
+                {/* <li className="list_variant-li">
                   <a href="">preguntas frecuentes</a>
-                </li>
-                <li className="list_variant-li">
+                </li> */}
+                {/* <li className="list_variant-li">
                   <a href="">PQRFS</a>
-                </li>
+                </li> */}
                 <li className="list_variant-li">
                   <a href="">contacto</a>
+                </li>
+              </ul>
+              <ul className="list_variant-2">
+                <li>
+                  <i className="bx bxl-facebook"></i>
+                </li>
+                <li>
+                  <i className="bx bxl-instagram"></i>
+                </li>
+                <li>
+                  <i className="bx bxl-whatsapp"></i>
+                </li>
+                <li>
+                  <i className="bx bxl-youtube"></i>
+                </li>
+                <li>
+                  <i className="bx bxl-telegram"></i>
                 </li>
               </ul>
             </section>

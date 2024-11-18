@@ -9,12 +9,11 @@
   object-fit: cover; */
   position: fixed;
   z-index: 5;
-
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #4a0675; /* Color principal */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para un efecto de elevación */
+  background-color: #4a0675;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   top: 0;
 }
 
@@ -106,12 +105,6 @@
   top: 100px;
   left: 10px;
 }
-/* .li_4 {
-  padding: 10px;
-  position: absolute;
-  top: 150px;
-  left: 10px;
-} */
 .li_5 {
   padding: 10px;
   position: absolute;
